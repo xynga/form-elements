@@ -1,0 +1,5 @@
+<div (keydown)="onKeydown($event, null)" tabindex="0">
+  <div *ngFor="let button of buttons; let i=index;" (keydown)="onKeydown($event, i)" style="display: inline" (click)="onClick(i)" [attr.au]="au[i]" class="option" tabindex="0">
+    {{button}}
+  </div>
+</div>

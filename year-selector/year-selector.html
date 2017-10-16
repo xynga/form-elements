@@ -1,0 +1,9 @@
+
+
+  <span *ngIf="1 === years.length">{{years[0]}}</span>
+  <select *ngIf="1 < years.length" id="year_select" name="year_select" (change)="onChange(year)" [(ngModel)]="year" >
+    <option *ngFor="let option of years" [value]="option" [label]="option" [selected]="option == year"></option>
+  </select>
+
+
+

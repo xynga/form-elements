@@ -1,0 +1,8 @@
+<select [(ngModel)]="selected" name="drop-down" (change)="onChange(selected)" >
+  <option *ngIf="placeholder && !selected" [ngValue]="undefined" disabled>
+    {{placeholder}}
+  </option>
+  <option *ngFor="let option of getOptions()" name="option" [value]="option">
+    {{option}}
+  </option>
+</select>
