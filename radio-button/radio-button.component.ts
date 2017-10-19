@@ -2,7 +2,12 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'radio-button',
-  templateUrl: './radio-button.component.html'
+  templateUrl: './radio-button.component.html',
+  styles: [`.option{  background: lightgray; 
+                      border: 1px solid black; 
+                      cursor: pointer; 
+                      padding: 1px; 
+                      margin: 1px;}`]
 })
 export class RadioButtonComponent implements OnInit {
   @Input() buttons: string[] = [];
