@@ -1,6 +1,6 @@
 {
   "name": "xynga-form-elements",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Holds all the components classified under the label of \"Form-Elements\"",
   "main": "index.js",
   "scripts": {
