@@ -8,6 +8,7 @@ export class RadioButtonComponent implements OnInit {
   @Input() buttons: string[] = [];
   @Input() selected = 0;
 
+
   @Output() selectedChanged: EventEmitter<number> = new EventEmitter<number>();
 
   public au: string[] = [];
