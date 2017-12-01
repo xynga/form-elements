@@ -4,19 +4,36 @@
   "description": "Holds all the components classified under the label of \"Form-Elements\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "gulp inline && ngc"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xynga/form-elements.git"
+  },
+  "peerDependencies": {
     "@angular/common": "^4.4.6",
     "@angular/core": "^4.4.6",
     "@angular/forms": "^4.4.6",
+    "@angular/platform-browser": "4.4.6",
     "typescript": "^2.6.1"
   },
   "devDependencies": {
     "@angular/cli": "^1.5.0",
-    "@angular/compiler-cli": "latest",
-    "typescript": "5.5.1"
+    "@angular/common": "^4.4.6",
+    "@angular/compiler": "^4.4.6",
+    "@angular/compiler-cli": "^4.4.6",
+    "@angular/core": "^4.4.6",
+    "@angular/forms": "^4.4.6",
+    "@angular/platform-browser": "^4.4.6",
+    "@types/node": "^8.0.53",
+    "gulp": "^3.9.1",
+    "gulp-inline-ng2-template": "^4.0.0",
+    "node-sass": "^4.7.2",
+    "rxjs": "^5.5.2",
+    "typescript": "^2.6.1",
+    "zone.js": "^0.8.18"
   }
 }

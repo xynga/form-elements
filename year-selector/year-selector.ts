@@ -3,7 +3,7 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
 // Externalized (polyglot) text values for field labels, input placeholders, button text
 // screen reader text, page headings, user instructions, help messages, menu uploads, etc
 
-type Year = string;
+export type Year = string;
 
 const SELECTOR: string = 'year-selector';
 
