@@ -1,0 +1,9 @@
+@mixin height-generator($numerator, $denominator) {
+  [au~="height-#{$numerator}-#{$denominator}"] {
+    @if (0 == $numerator) {
+      height: 0;
+    } @else {
+      height: percentage($numerator / $denominator);
+    }
+  }
+}

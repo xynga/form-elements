@@ -1,0 +1,27 @@
+@mixin translateY-animation-generator($numerator) {
+  [au~="from-y-position-#{-$numerator}"] {
+    animation: from-y-position-#{-$numerator};
+  }
+
+  @keyframes from-y-position-#{-$numerator} {
+    0% {
+      transform: translateY(percentage(-$numerator));
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  [au~="from-y-position-#{$numerator}"] {
+    animation: from-y-position-#{$numerator};
+  }
+
+  @keyframes from-y-position-#{$numerator} {
+    0% {
+      transform: translateY(percentage($numerator));
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@mixin width-generator($numerator, $denominator) {
+  [au~="width-#{$numerator}-#{$denominator}"] {
+    @if (0 == $numerator) {
+      width: 0;
+    } @else {
+      width: percentage($numerator / $denominator);
+    }
+  }
+}

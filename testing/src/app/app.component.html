@@ -1,0 +1,28 @@
+<h1>Dropdown Component</h1>
+<dropdown [options]="proteinOptions" (optionChanged)="proteinSelected($event)"></dropdown>
+<p>Selected option: <b>{{protein}}</b></p>
+
+<h1>Radio Button Component</h1>
+<div>
+  <div class="pure-u-2-3">
+    <radio-button
+      [buttons]="viewStates"
+      [selected]="viewState"
+      (selectedChanged)="onSelectedChanged($event)">
+    </radio-button>
+  </div>
+  <div class="pure-u-1-3"></div>
+</div>
+<br/>
+<span>Radio button state: {{viewState}}</span>
+
+<h1>Year Selector Component</h1>
+<div>
+  <year-selector
+    [year]="currentYear"
+    [years]="yearsList"
+    (yearChanged)="onYearChange($event)">
+  </year-selector>
+</div>
+<br/>
+<span>Current year: {{currentYear}}</span>

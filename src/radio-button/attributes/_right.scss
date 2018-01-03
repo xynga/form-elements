@@ -1,0 +1,9 @@
+@mixin right-generator($numerator, $denominator) {
+  [au~="right-#{$numerator}-#{$denominator}"] {
+    @if (0 == $numerator) {
+      right: 0;
+    } @else {
+      right: percentage($numerator / $denominator);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "xynga-form-elements",
+  "version": "1.0.3",
+  "description": "Holds all the components classified under the label of \"Form-Elements\"",
+  "main": "./inline/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GradTech V",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xynga/form-elements.git"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=4.4.6",
+    "@angular/core": ">=4.4.6",
+    "@angular/forms": ">=4.4.6",
+    "@angular/platform-browser": ">=4.4.6"
+  }
+}
