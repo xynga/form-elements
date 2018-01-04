@@ -8,7 +8,7 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
 export class DropdownComponent {
   @Input() name: string = '';
   @Input() options: string[] | ((selected: string) => string[]) = [];
-  @Input() selected: string = undefined;
+  @Input() selected: string;
   @Input() placeholder: string = '';
 
   @Output() optionChanged: EventEmitter<string> = new EventEmitter<string>();

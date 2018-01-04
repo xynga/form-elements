@@ -1,0 +1,42 @@
+@import "_width";
+@import "_height";
+@import "_left";
+@import "_right";
+@import "animations/_translateX";
+@import "animations/_translateY";
+
+@mixin grid-generator($grid-list: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20) {
+  @each $grid in $grid-list {
+    @for $column from 0 through $grid {
+      @include width-generator($column, $grid);
+    }
+  }
+
+  @each $grid in $grid-list {
+    @for $row from 0 through $grid {
+      @include height-generator($row, $grid);
+    }
+  }
+
+  @each $grid in $grid-list {
+    @for $left from 0 through $grid {
+      @include left-generator($left, $grid);
+    }
+  }
+
+  @each $grid in $grid-list {
+    @for $right from 0 through $grid {
+      @include right-generator($right, $grid);
+    }
+  }
+
+  @for $x from 1 through max($grid-list...) {
+    @include translateX-animation-generator($x);
+  }
+
+  @for $y from 1 through max($grid-list...) {
+    @include translateY-animation-generator($y);
+  }
+}
+
+@include grid_generator();
