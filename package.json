@@ -4,8 +4,13 @@
   "description": "Holds all the components classified under the label of \"Form-Elements\"",
   "main": "dist/inline/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postversion": "git push"
+    "build": "cd src && npm run compile",
+    "link-build": "npm link && cd testing && npm link xynga-form-elements",
+    "postversion": "git push",
+    "rebuild": "npm run build && npm start",
+    "setup": "cd src && npm i && cd .. && npm run build && cd testing && npm i && cd .. && npm run link-build",
+    "start": "cd testing && start chrome http://localhost:4200 && ng serve",
+    "test": "npm run start"
   },
   "files": [
     "dist/inline"
