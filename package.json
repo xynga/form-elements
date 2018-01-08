@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "Holds all the components classified under the label of \"Form-Elements\"",
   "main": "dist/inline/index.js",
+  "types": "dist/inline/index.d.ts",
   "scripts": {
     "build": "cd src && npm run compile",
     "link-build": "npm link && cd testing && npm link xynga-form-elements",
