@@ -23,9 +23,9 @@
     "url": "https://github.com/xynga/form-elements.git"
   },
   "peerDependencies": {
-    "@angular/common": ">=4.4.6",
-    "@angular/core": ">=4.4.6",
-    "@angular/forms": ">=4.4.6",
-    "@angular/platform-browser": ">=4.4.6"
+    "@angular/common": ">=4.0.0",
+    "@angular/core": ">=4.0.0",
+    "@angular/forms": ">=4.0.0",
+    "@angular/platform-browser": ">=4.0.0"
   }
 }
