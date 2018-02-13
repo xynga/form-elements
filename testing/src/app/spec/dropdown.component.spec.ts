@@ -29,6 +29,13 @@ describe('DropdownComponent', () => {
     expect(dd).toBeTruthy();
   });
 
+  it('should initialize value to selected input', () => {
+    ddComp.selected = '';
+    ddComp.options = (sel) => !sel ? sel : undefined;
+    fixture.detectChanges();
+    expect(ddComp.getOptions()).toBe('');
+  });
+
   it('should display selected input option', () => {
     ddComp.name = 'Test Name';
     ddComp.options = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
