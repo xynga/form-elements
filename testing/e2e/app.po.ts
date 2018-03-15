@@ -5,7 +5,22 @@ export class AppPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  clickDropdownByNum(num){
+    let allOptions = element.all(by.tagName('option'));
+    let currentOption = allOptions.get(num);
+    currentOption.click();
+  }
+
+  checkSelectedDropDown(){
+    return element(by.css('b'));
+  }
+
+  getRadioOption(num){
+    let allOptions = element.all(by.css('au.option'));
+    return allOptions.get(num);
+  }
+
+  getRadioButton(){
+    return element(by.css('radio-button'));
   }
 }
