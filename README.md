@@ -7,7 +7,7 @@
 Xynga-Form-Elements is an Angular 4 library that is made up of the following components: 
   
 - `DropdownMenu`
-- `RaidoButton`
+- `RadioButton`
 - `YearSelector` - a drop-down menu designed specifically for each option be a different year
 
 ## Motivation
