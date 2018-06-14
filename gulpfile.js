@@ -5,8 +5,8 @@ const clean = require('gulp-clean');
 
 const INLINE_TEMPLATES = {
     SRC: [
-        './src/navigation/**/*.ts',
-       '!./src/navigation/**/*.spec.ts'
+        './src/form-elements/**/*.ts',
+       '!./src/form-elements/**/*.spec.ts'
     ],
     DIST: './dist',
     CONFIG: {
