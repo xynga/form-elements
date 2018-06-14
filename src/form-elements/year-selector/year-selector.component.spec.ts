@@ -1,5 +1,5 @@
 import { TestBed, async, ComponentFixture } from '@angular/core/testing';
-import { YearSelectorComponent } from 'xynga-form-elements';
+import { YearSelectorComponent } from './year-selector';
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 

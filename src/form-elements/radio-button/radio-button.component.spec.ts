@@ -1,5 +1,6 @@
 import { TestBed, async, ComponentFixture, fakeAsync, flush, tick } from '@angular/core/testing';
-import { AuComponent, RadioButtonComponent } from 'xynga-form-elements';
+import { AuComponent} from './au';
+import { RadioButtonComponent } from './radio-button.component';
 import { By } from '@angular/platform-browser';
 
 describe('RadioButtonComponent', () => {

@@ -1,6 +1,6 @@
 import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
-import { DropdownComponent } from 'xynga-form-elements';
+import { DropdownComponent } from './dropdown';
 import { By } from '@angular/platform-browser';
 
 describe('DropdownComponent', () => {
